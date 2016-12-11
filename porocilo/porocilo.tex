@@ -1,0 +1,114 @@
+
+\documentclass[11pt,a4paper,slovene]{myarticle}
+
+%Uporabljeni paketi
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\captionsetup{font={default,footnotesize}, labelfont=bf, format=hang,indention=.0cm}
+\usepackage{graphicx,epsfig}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage[official]{eurosym}
+
+\usepackage{hyperref}
+\hypersetup{
+   bookmarksnumbered=true,
+   urlbordercolor={0 1 0},
+   linkbordercolor={1 1 1},
+   unicode=true,
+   pdftitle={ Modeliranje Računalniških Omrežij },
+   pdfauthor={Aljaž Markežič, Žan Valter Dragan},
+   pdfdisplaydoctitle=true,
+   pdftoolbar=true,
+   pdfmenubar=true,
+   pdfstartview=X Y Z
+}
+
+\urlstyle{same}
+
+\setlength{\parskip}{12pt}
+\setlength\parindent{0pt}
+\setlength\unitlength{1mm}
+
+\begin{document}
+\label{naslov}
+\pdfbookmark[1]{Naslov}{naslov}
+\thispagestyle{empty}
+
+\begin{center}
+\begin{Large}
+Modeliranje računalniških omrežij\\
+Študijsko leto 2016/2017\\
+\end{Large}
+
+\vspace*{4cm}
+\begin{LARGE}
+\textbf{Implementacija IEEE 802.11 v orodju OMNeT++\\}
+\end{LARGE}
+\vspace*{0.5cm}
+
+\begin{Large}
+Modeliranje brezžičnih omrežij\\
+
+\vspace*{4cm}
+
+Aljaž Markežič, Žan Valter Dragan\\
+Vpisna št. 63140157, 63140045\\
+
+\vspace*{5cm}
+Ljubljana, \today
+\end{Large}
+\end{center}
+
+\pagebreak
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\label{Kazalo}
+\pdfbookmark[1]{Kazalo}{Kazalo}
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+
+\section{Uvod in motivacija}
+V zadnjih letih se je zelo razširila nova doba povezljivosti, tako imenovani Internet of Things (IoT) oziroma Internet Stvari. Trg v omrežje povezanih naprav se neprestano povečuje z nezanemarljivo hitrostjo. Ker so kabli preokorni in Bluetooth ni vedno optimalen, se velikokrat išče rešitev v brezžičnih povezavah tipa IEEE 802.11. V tej seminarski nalogi se bova osredotočila na te povezave in jih nekaj tudi bolj nadrobno predstavila. Simulirala bova različna omrežja in preverila, kako se posemezen tip odnese. S tem bova pridobila podatke, kateri se nato lahko uporabijo pri izdelavi povezanih naprav.
+
+\section{Opis specifikacij IEEE 802.11}
+Zametki standarda IEEE 802.11 segajo že v leto 1985, vendar se je specifikacijo standardiziralo šele leta 1997. V 802.11 sta zajeti fizična plast ter del podatkovne plasti (Media Access Control - MAC). Standard se preko revizij spreminja še sedaj. Prva bolje zastopana različica je bila 802.11b, nekaj drugih pa je še a, g, n, ac, ... Ti standari delujejo na frekvencah 900MHz, 2.4GHz, 3.6GHz, 5GHz ter 60GHz. Naprave z 2.4GHz implementacijo občutijo občasne motnje drugih naprav, kot so mikrovalovne pečice, Bluetooth naprave in druge. Motnje rešujemo z raznimi modulacijami (Direct-Sequence Spread Spectrum, Orthogonal Frequency-Division Multiplexing). Povezave običajno dosegajo hitrosti v Mbit/s (od 1 do 866), kar pa so želeli spremeniti s standardom 802.11ad, kjer je možno doseči hitrosti do 7Gbit/s z uporabo višjih frekvenc.
+
+\section{Uporabljene knjižnice}
+Opis knjižnic, modulov in omrežij, ki so bili uporabljeni za rešitev.
+
+\section{Rešitev}
+Podroben opis rešitve. Sem spadajo načrtovanje, struktura omrežja, opis sprogramiranih modulov in omrežij.
+
+\section{Simulacije in rezultati}
+Podroben opis simulacijskega algoritma, rezultati in pregled grafov performančne analize.
+
+\section{Zaključek}
+Ali ste izpolnili cilje in možne nadaljne nadgradnje. Pri samem opisu rešitve se običajno sklicujemo na reference, npr. \cite{omnetpp}. 
+
+\pagebreak
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
