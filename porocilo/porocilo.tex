@@ -85,7 +85,14 @@ V zadnjih letih se je zelo razširila nova doba povezljivosti, tako imenovani In
 Zametki standarda IEEE 802.11 segajo že v leto 1985, vendar se je specifikacijo standardiziralo šele leta 1997. V 802.11 sta zajeti fizična plast ter del podatkovne plasti (Media Access Control - MAC). Standard se preko revizij spreminja še sedaj. Prva bolje zastopana različica je bila 802.11b, nekaj drugih pa je še a, g, n, ac, ... Ti standari delujejo na frekvencah 900MHz, 2.4GHz, 3.6GHz, 5GHz ter 60GHz. Naprave z 2.4GHz implementacijo občutijo občasne motnje drugih naprav, kot so mikrovalovne pečice, Bluetooth naprave in druge. Motnje rešujemo z raznimi modulacijami (Direct-Sequence Spread Spectrum, Orthogonal Frequency-Division Multiplexing). Povezave običajno dosegajo hitrosti v Mbit/s (od 1 do 866), kar pa so želeli spremeniti s standardom 802.11ad, kjer je možno doseči hitrosti do 7Gbit/s z uporabo višjih frekvenc.
 
 \section{Uporabljene knjižnice}
-Opis knjižnic, modulov in omrežij, ki so bili uporabljeni za rešitev.
+\subsection{Razpoložljivi gradniki v OMNeT++}
+\begin{itemize}
+	\item \textbf{IPv4NetworkConfigurator:} modul, ki napravam v omrežju dodeli ipv4 naslove, ter skrbi za statično usmerjanje v omrežju. Modulu lahko nastavljamo naslednje atribute: address, netmask, multicast group, mtu,…
+	\item \textbf{WirelessHost:} modul, ki simulira delovanje IP gostitelja (host-a), torej je sposoben posredovat, sprejemat in odgovarjat na sporočila, ki se pretakajo po omrežju. Nekaj od atributov ki jih lahko nastavljamo temu modulu so: bandwith,  transmiter.power, carierFrequency, reciever.sensiticity, antenaGain,…
+	\item \textbf{Radio Medium:} modul, ki opisuje model deljenega fizičnega medija preko katerega potekajo vse komunikacije v omrežju. Modulu lahko določamo razne atribute kot so: material, backgroundNoise, pathloss, obstacleLoss,…, s pomočjo katerih lahko simuliramo dejanski medij preko katerih bi potekala brezžična povezava
+	\item \textbf{PhysicalEnvironment:} modul, ki simulira fizične ovire, ki se lahko znajdejo v testnem okolju. S pomočjo tega modula lahko simuliramo kako se bo odzivalo omrežje, saj fizične ovire vplivajo na porabo energije, ter premikanje brezžičnih gostiteljev (wirelessHosts). Modulu lahko nastavljamo naslednje atribute: position, orientation, shape, material, color, opacity
+	\item \textbf{AccessPoint:} modul, ki simulira generično vstopno točko (access point), preko katere si lahko naprave izmenjujejo sporočila, ter podpira več brezžičnih frekvenc in ethernet vhodov.
+\end{itemize}
 
 \section{Rešitev}
 Podroben opis rešitve. Sem spadajo načrtovanje, struktura omrežja, opis sprogramiranih modulov in omrežij.
@@ -101,10 +108,6 @@ Ali ste izpolnili cilje in možne nadaljne nadgradnje. Pri samem opisu rešitve 
 \bibliography{references}
 
 \end{document}
-
-
-
-
 
 
 
