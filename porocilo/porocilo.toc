@@ -3,7 +3,11 @@
 \contentsline {section}{\numberline {2}Opis specifikacij IEEE 802.11}{2}{section.2}
 \contentsline {section}{\numberline {3}Uporabljene knji\IeC {\v z}nice}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Razpolo\IeC {\v z}ljivi gradniki v OMNeT++}{2}{subsection.3.1}
-\contentsline {section}{\numberline {4}Re\IeC {\v s}itev}{3}{section.4}
-\contentsline {section}{\numberline {5}Simulacije in rezultati}{3}{section.5}
-\contentsline {section}{\numberline {6}Zaklju\IeC {\v c}ek}{3}{section.6}
-\contentsline {section}{\numberline {7}Literatura}{4}{section.7}
+\contentsline {subsection}{\numberline {3.2}Zgledi omre\IeC {\v z}ij 802.11 v OMNeT++}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Primer1 - LAN 802.11}{3}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Primer2 - QOS}{4}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Primer3 - Synchronized}{5}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Re\IeC {\v s}itev}{6}{section.4}
+\contentsline {section}{\numberline {5}Simulacije in rezultati}{6}{section.5}
+\contentsline {section}{\numberline {6}Zaklju\IeC {\v c}ek}{6}{section.6}
+\contentsline {section}{\numberline {7}Literatura}{7}{section.7}
