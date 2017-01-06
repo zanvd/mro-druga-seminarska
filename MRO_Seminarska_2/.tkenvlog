@@ -1,0 +1,8 @@
+---- 20170104-11:32:57 ---------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#232: tagOrId "f2" doesn't match any items
+    while executing
+".network.c raise submodext f2"
+
+

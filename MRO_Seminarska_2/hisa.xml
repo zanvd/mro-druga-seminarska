@@ -1,0 +1,11 @@
+<environment>
+ 	<!-- Vertical walls -->
+    	<object position="min 70 170 0" orientation="0 0 0" shape="cuboid 5 150 100" material="concrete" fill-color="203 65 84" opacity="0.8"/>
+    	<object position="min 370 170 0" orientation="0 0 0" shape="cuboid 5 150 100" material="concrete" fill-color="203 65 84" opacity="0.8"/>
+    	<object position="min 270 170 0" orientation="0 0 0" shape="cuboid 5 150 100" material="glass" fill-color="201, 219, 220" opacity="0.5"/>
+    	<object position="min 170 170 0" orientation="0 0 0" shape="cuboid 5 150 100" material="glass" fill-color="201, 219, 220" opacity="0.5"/>
+    	
+   <!-- Horizontal walls -->
+    	<object position="min 70 170 0" orientation="0 0 0" shape="cuboid 305 5 100" material="concrete" fill-color="203 65 84" opacity="0.8"/>
+    	<object position="min 70 320 0" orientation="0 0 0" shape="cuboid 305 5 100" material="concrete" fill-color="203 65 84" opacity="0.8"/>
+</environment>

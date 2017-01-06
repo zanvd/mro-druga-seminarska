@@ -1,0 +1,88 @@
+file 3200 1483567020                                            
+version 2
+run Omrezje1-0-20170104-22:56:50-400
+attr configname Omrezje1
+attr datetime 20170104-22:56:50
+attr experiment Omrezje1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Omrezje1
+attr processid 400
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.accessPoint.wlan[0].radio.transmitter.power 100mW
+param *.host*.networkLayer.arpType "\"GlobalARP\""
+param *.host*.numPingApps 1
+param *.host*.wlan[0].radio.displayCommunicationRange true
+param *.host*.wlan[0].radio.transmitter.power "1 mW"
+param *.host1.pingApp[0].destAddr "\"host0\""
+param *.host1.pingApp[0].sendInterval 5ms
+param *.host1.wlan[0].radio.displayInterferenceRange true
+param *.radioMedium.backgroundNoise.power default
+param *.radioMedium.pathLossType default
+
+vector 8  Omrezje1.accessPoint.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 28  Omrezje1.host0.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 48  Omrezje1.host1.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 4  Omrezje1.accessPoint.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 7  Omrezje1.accessPoint.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 24  Omrezje1.host0.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 27  Omrezje1.host0.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 44  Omrezje1.host1.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 47  Omrezje1.host1.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 5  Omrezje1.accessPoint.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 25  Omrezje1.host0.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 45  Omrezje1.host1.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+4	2968 18 0 0 0 0 2 0 2 2 4
+5	2986 9 0 0 0 0 1 1 1 1 1
+7	2995 9 0 0 0 0 1 0 0 0 0
+8	3004 36 0 0 0 0 4 0 0 0 0
+24	3040 20 0 0 0 0 2 0 2 2 4
+25	3060 10 0 0 0 0 1 1 1 1 1
+27	3070 10 0 0 0 0 1 0 0 0 0
+28	3080 40 0 0 0 0 4 0 0 0 0
+44	3120 20 0 0 0 0 2 0 2 2 4
+45	3140 10 0 0 0 0 1 1 1 1 1
+47	3150 10 0 0 0 0 1 0 0 0 0
+48	3160 40 0 0 0 0 4 0 0 0 0

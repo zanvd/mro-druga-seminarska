@@ -1,0 +1,995 @@
+version 2
+run General-0-20170104-11:32:02-10028
+attr configname General
+attr datetime 20170104-11:32:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Omrezje1
+attr processid 10028
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.accessPoint.wlan[*].radio.transmitter.power 100mW
+param *.host*.networkLayer.arpType "\"GlobalARP\""
+param *.host*.numPingApps 1
+param *.host*.wlan[*].radio.transmitter.power "10 mW"
+param *.host1.pingApp[*].destAddr "\"host0\""
+param *.host1.pingApp[*].sendInterval 5ms
+
+scalar Omrezje1.accessPoint.wlan[0].mac.statistics 	numReceivedUnicast 	14
+scalar Omrezje1.accessPoint.wlan[0].mac.statistics 	numReceivedBroadcast 	2
+scalar Omrezje1.accessPoint.wlan[0].mac.statistics 	numReceivedMulticast 	0
+scalar Omrezje1.accessPoint.wlan[0].mac.statistics 	numReceivedNotForUs 	0
+scalar Omrezje1.accessPoint.wlan[0].mac.statistics 	numReceivedErroneous 	0
+scalar Omrezje1.accessPoint.wlan[0].mac 	rcvdPkFromHL:count 	22
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Omrezje1.accessPoint.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	1648
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Omrezje1.accessPoint.wlan[0].mac 	passedUpPk:count 	16
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Omrezje1.accessPoint.wlan[0].mac 	passedUpPk:sum(packetBytes) 	1264
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Omrezje1.accessPoint.wlan[0].mac 	rcvdPkFromLL:count 	31
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Omrezje1.accessPoint.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	1474
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Omrezje1.accessPoint.wlan[0].mac 	sentDownPk:count 	35
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Omrezje1.accessPoint.wlan[0].mac 	sentDownPk:sum(packetBytes) 	1724
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+statistic Omrezje1.accessPoint.wlan[0].radio 	symbolErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.accessPoint.wlan[0].radio 	bitErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.accessPoint.wlan[0].radio 	packetErrorRate:histogram
+field count 31
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	31
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.accessPoint.wlan[0].radio 	minSNIR:histogram
+field count 31
+field mean 8911.5110538221
+field stddev 516.00499784639
+field sum 276256.84266849
+field sqrsum 2469853741.8683
+field min 8387.2494517484
+field max 9403.0063057663
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	7879.3710247394	0
+bin	7947.0881483406	0
+bin	8014.8052719418	0
+bin	8082.522395543	0
+bin	8150.2395191442	0
+bin	8217.9566427454	0
+bin	8285.6737663466	0
+bin	8353.3908899478	15
+bin	8421.108013549	0
+bin	8488.8251371502	0
+bin	8556.5422607514	0
+bin	8624.2593843526	0
+bin	8691.9765079538	0
+bin	8759.6936315549	0
+bin	8827.4107551561	0
+bin	8895.1278787573	0
+bin	8962.8450023585	0
+bin	9030.5621259597	0
+bin	9098.2792495609	0
+bin	9165.9963731621	0
+bin	9233.7134967633	0
+bin	9301.4306203645	0
+bin	9369.1477439657	16
+bin	9436.8648675669	0
+bin	9504.5819911681	0
+bin	9572.2991147693	0
+bin	9640.0162383705	0
+bin	9707.7333619717	0
+bin	9775.4504855729	0
+bin	9843.1676091741	0
+bin	9910.8847327753	0
+scalar Omrezje1.accessPoint.wlan[0].radio 	transmissionState:count 	140
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Omrezje1.accessPoint.wlan[0].radio 	receptionState:count 	133
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Omrezje1.accessPoint.wlan[0].radio 	radioMode:count 	72
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Omrezje1.accessPoint.wlan[0].radio 	radioChannel:histogram
+field count 1
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje1.host0.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Omrezje1.host0.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Omrezje1.host0.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Omrezje1.host0.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Omrezje1.host0.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Omrezje1.host0.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Omrezje1.host0.wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar Omrezje1.host0.wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar Omrezje1.host0.wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar Omrezje1.host0.wlan[0].mac.statistics 	numReceivedUnicast 	8
+scalar Omrezje1.host0.wlan[0].mac.statistics 	numReceivedBroadcast 	7
+scalar Omrezje1.host0.wlan[0].mac.statistics 	numReceivedMulticast 	0
+scalar Omrezje1.host0.wlan[0].mac.statistics 	numReceivedNotForUs 	14
+scalar Omrezje1.host0.wlan[0].mac.statistics 	numReceivedErroneous 	0
+scalar Omrezje1.host0.wlan[0].mac 	rcvdPkFromHL:count 	8
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Omrezje1.host0.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	632
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Omrezje1.host0.wlan[0].mac 	passedUpPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Omrezje1.host0.wlan[0].mac 	passedUpPk:sum(packetBytes) 	1008
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Omrezje1.host0.wlan[0].mac 	rcvdPkFromLL:count 	50
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Omrezje1.host0.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2454
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Omrezje1.host0.wlan[0].mac 	sentDownPk:count 	16
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Omrezje1.host0.wlan[0].mac 	sentDownPk:sum(packetBytes) 	744
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+statistic Omrezje1.host0.wlan[0].radio 	symbolErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host0.wlan[0].radio 	bitErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host0.wlan[0].radio 	packetErrorRate:histogram
+field count 50
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	50
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host0.wlan[0].radio 	minSNIR:histogram
+field count 50
+field mean 66486.546709107
+field stddev 42500.568423179
+field sum 3324327.3354554
+field sqrsum 309531662163.49
+field min 2218.3418958094
+field max 94030.063057663
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-43687.518685118	0
+bin	-37566.737274327	0
+bin	-31445.955863537	0
+bin	-25325.174452747	0
+bin	-19204.393041957	0
+bin	-13083.611631166	0
+bin	-6962.830220376	0
+bin	-842.04880958576	15
+bin	5278.7326012045	0
+bin	11399.514011995	0
+bin	17520.295422785	0
+bin	23641.076833575	0
+bin	29761.858244366	0
+bin	35882.639655156	0
+bin	42003.421065946	0
+bin	48124.202476736	0
+bin	54244.983887527	0
+bin	60365.765298317	0
+bin	66486.546709107	0
+bin	72607.328119897	0
+bin	78728.109530688	0
+bin	84848.890941478	0
+bin	90969.672352268	35
+bin	97090.453763058	0
+bin	103211.23517385	0
+bin	109332.01658464	0
+bin	115452.79799543	0
+bin	121573.57940622	0
+bin	127694.36081701	0
+bin	133815.1422278	0
+bin	139935.92363859	0
+scalar Omrezje1.host0.wlan[0].radio 	transmissionState:count 	64
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Omrezje1.host0.wlan[0].radio 	receptionState:count 	133
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Omrezje1.host0.wlan[0].radio 	radioMode:count 	34
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Omrezje1.host0.wlan[0].radio 	radioChannel:histogram
+field count 4
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	4
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje1.host0.pingApp[0] 	numOutOfOrderArrivals:last 	nan
+attr interpolationmode  none
+attr title  "ping out-of-order arrivals, last"
+scalar Omrezje1.host0.pingApp[0] 	pingRxSeq:count 	0
+attr interpolationmode  none
+attr title  "ping rx seq, count"
+scalar Omrezje1.host0.pingApp[0] 	pingTxSeq:count 	0
+attr interpolationmode  none
+attr title  "ping tx seq, count"
+scalar Omrezje1.host0.pingApp[0] 	numLost:last 	nan
+attr interpolationmode  none
+attr title  "pings lost, last"
+statistic Omrezje1.host0.pingApp[0] 	rtt:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr interpolationmode  none
+attr title  "ping round-trip time, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje1.host1.lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Omrezje1.host1.lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Omrezje1.host1.lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Omrezje1.host1.lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Omrezje1.host1.lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Omrezje1.host1.lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Omrezje1.host1.wlan[0].agent 	dropConfirm:count 	0
+attr title  "dropped confirms, count"
+scalar Omrezje1.host1.wlan[0].agent 	acceptConfirm:count 	3
+attr title  "accepted confirms, count"
+scalar Omrezje1.host1.wlan[0].agent 	sentRequest:count 	3
+attr title  "sent requests, count"
+scalar Omrezje1.host1.wlan[0].mac.statistics 	numReceivedUnicast 	7
+scalar Omrezje1.host1.wlan[0].mac.statistics 	numReceivedBroadcast 	7
+scalar Omrezje1.host1.wlan[0].mac.statistics 	numReceivedMulticast 	0
+scalar Omrezje1.host1.wlan[0].mac.statistics 	numReceivedNotForUs 	15
+scalar Omrezje1.host1.wlan[0].mac.statistics 	numReceivedErroneous 	0
+scalar Omrezje1.host1.wlan[0].mac 	rcvdPkFromHL:count 	8
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Omrezje1.host1.wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	632
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Omrezje1.host1.wlan[0].mac 	passedUpPk:count 	14
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Omrezje1.host1.wlan[0].mac 	passedUpPk:sum(packetBytes) 	888
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Omrezje1.host1.wlan[0].mac 	rcvdPkFromLL:count 	50
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Omrezje1.host1.wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2454
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Omrezje1.host1.wlan[0].mac 	sentDownPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Omrezje1.host1.wlan[0].mac 	sentDownPk:sum(packetBytes) 	730
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+statistic Omrezje1.host1.wlan[0].radio 	symbolErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host1.wlan[0].radio 	bitErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field sum 0
+field sqrsum 0
+field min nan
+field max nan
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host1.wlan[0].radio 	packetErrorRate:histogram
+field count 51
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	51
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Omrezje1.host1.wlan[0].radio 	minSNIR:histogram
+field count 51
+field mean 58255.505459703
+field stddev 38265.042453422
+field sum 2971030.7784449
+field sqrsum 246289573432.75
+field min 2218.3418958094
+field max 83872.494517484
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-38608.734415028	0
+bin	-33165.124240249	0
+bin	-27721.514065471	0
+bin	-22277.903890693	0
+bin	-16834.293715915	0
+bin	-11390.683541136	0
+bin	-5947.0733663581	0
+bin	-503.46319157977	16
+bin	4940.1469831985	0
+bin	10383.757157977	0
+bin	15827.367332755	0
+bin	21270.977507533	0
+bin	26714.587682312	0
+bin	32158.19785709	0
+bin	37601.808031868	0
+bin	43045.418206646	0
+bin	48489.028381425	0
+bin	53932.638556203	0
+bin	59376.248730981	0
+bin	64819.85890576	0
+bin	70263.469080538	0
+bin	75707.079255316	0
+bin	81150.689430094	35
+bin	86594.299604873	0
+bin	92037.909779651	0
+bin	97481.519954429	0
+bin	102925.13012921	0
+bin	108368.74030399	0
+bin	113812.35047876	0
+bin	119255.96065354	0
+bin	124699.57082832	0
+scalar Omrezje1.host1.wlan[0].radio 	transmissionState:count 	60
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Omrezje1.host1.wlan[0].radio 	receptionState:count 	133
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Omrezje1.host1.wlan[0].radio 	radioMode:count 	32
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Omrezje1.host1.wlan[0].radio 	radioChannel:histogram
+field count 4
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	4
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje1.host1.pingApp[0] 	"Pings sent" 	111
+scalar Omrezje1.host1.pingApp[0] 	"ping loss rate (%)" 	97.297297297297
+scalar Omrezje1.host1.pingApp[0] 	"ping out-of-order rate (%)" 	0
+scalar Omrezje1.host1.pingApp[0] 	numOutOfOrderArrivals:last 	nan
+attr interpolationmode  none
+attr title  "ping out-of-order arrivals, last"
+scalar Omrezje1.host1.pingApp[0] 	pingRxSeq:count 	3
+attr interpolationmode  none
+attr title  "ping rx seq, count"
+scalar Omrezje1.host1.pingApp[0] 	pingTxSeq:count 	111
+attr interpolationmode  none
+attr title  "ping tx seq, count"
+scalar Omrezje1.host1.pingApp[0] 	numLost:last 	107
+attr interpolationmode  none
+attr title  "pings lost, last"
+statistic Omrezje1.host1.pingApp[0] 	rtt:histogram
+field count 3
+field mean 0.002217400968
+field stddev 0.00037363083384539
+field sum 0.006652202904
+field sqrsum 1.5029801158662e-005
+field min 0.001877400968
+field max 0.002617400968
+attr interpolationmode  none
+attr title  "ping round-trip time, histogram"
+attr unit  s
+bin	-INF	0
+bin	0.001507400968	0
+bin	0.0015567343013333	0
+bin	0.0016060676346667	0
+bin	0.001655400968	0
+bin	0.0017047343013333	0
+bin	0.0017540676346667	0
+bin	0.001803400968	0
+bin	0.0018527343013333	1
+bin	0.0019020676346667	0
+bin	0.001951400968	0
+bin	0.0020007343013333	0
+bin	0.0020500676346667	0
+bin	0.002099400968	0
+bin	0.0021487343013333	1
+bin	0.0021980676346667	0
+bin	0.002247400968	0
+bin	0.0022967343013333	0
+bin	0.0023460676346667	0
+bin	0.002395400968	0
+bin	0.0024447343013333	0
+bin	0.0024940676346667	0
+bin	0.002543400968	0
+bin	0.0025927343013333	1
+bin	0.0026420676346667	0
+bin	0.002691400968	0
+bin	0.0027407343013333	0
+bin	0.0027900676346667	0
+bin	0.002839400968	0
+bin	0.0028887343013333	0
+bin	0.0029380676346667	0
+bin	0.002987400968	0
+scalar Omrezje1.radioMedium.propagation 	"Arrival computation count" 	132
+scalar Omrezje1.radioMedium 	"transmission count" 	66
+scalar Omrezje1.radioMedium 	"radio frame send count" 	132
+scalar Omrezje1.radioMedium 	"reception computation count" 	132
+scalar Omrezje1.radioMedium 	"interference computation count" 	465
+scalar Omrezje1.radioMedium 	"reception decision computation count" 	132
+scalar Omrezje1.radioMedium 	"listening decision computation count" 	201
+scalar Omrezje1.radioMedium 	"reception cache hit" 	85.714285714286
+attr unit  %
+scalar Omrezje1.radioMedium 	"interference cache hit" 	66.666666666667
+attr unit  %
+scalar Omrezje1.radioMedium 	"noise cache hit" 	0
+attr unit  %
+scalar Omrezje1.radioMedium 	"snir cache hit" 	50
+attr unit  %
+scalar Omrezje1.radioMedium 	"reception decision cache hit" 	50
+attr unit  %
+scalar Omrezje1.radioMedium 	"reception result cache hit" 	0
+attr unit  %

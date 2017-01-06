@@ -1,0 +1,188 @@
+file 60196 1483526010                                           
+version 2
+run General-0-20170104-11:32:02-10028
+attr configname General
+attr datetime 20170104-11:32:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Omrezje1
+attr processid 10028
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.accessPoint.wlan[*].radio.transmitter.power 100mW
+param *.host*.networkLayer.arpType "\"GlobalARP\""
+param *.host*.numPingApps 1
+param *.host*.wlan[*].radio.transmitter.power "10 mW"
+param *.host1.pingApp[*].destAddr "\"host0\""
+param *.host1.pingApp[*].sendInterval 5ms
+
+vector 8  Omrezje1.accessPoint.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 28  Omrezje1.host0.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 48  Omrezje1.host1.wlan[0].mac.ctn[0]  state:vector  ETV
+attr interpolationmode  none
+attr source  stateChanged
+attr title  "contention state, vector"
+vector 4  Omrezje1.accessPoint.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 7  Omrezje1.accessPoint.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 24  Omrezje1.host0.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 27  Omrezje1.host0.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 44  Omrezje1.host1.wlan[0].radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 47  Omrezje1.host1.wlan[0].radio  radioChannel:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioChannelChanged
+attr title  "Radio channel, vector"
+vector 5  Omrezje1.accessPoint.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 25  Omrezje1.host0.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 45  Omrezje1.host1.wlan[0].radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 32  Omrezje1.host1.pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 2  Omrezje1.accessPoint.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 1  Omrezje1.accessPoint.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 6  Omrezje1.accessPoint.wlan[0].radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 23  Omrezje1.host0.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 20  Omrezje1.host0.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 43  Omrezje1.host1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 40  Omrezje1.host1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 17  Omrezje1.host0.wlan[0].agent  sentRequest:vector  ETV
+attr title  "sent requests, vector"
+vector 37  Omrezje1.host1.wlan[0].agent  sentRequest:vector  ETV
+attr title  "sent requests, vector"
+vector 22  Omrezje1.host0.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 21  Omrezje1.host0.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 26  Omrezje1.host0.wlan[0].radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 3  Omrezje1.accessPoint.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 0  Omrezje1.accessPoint.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 42  Omrezje1.host1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 41  Omrezje1.host1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 46  Omrezje1.host1.wlan[0].radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 18  Omrezje1.host0.wlan[0].agent  acceptConfirm:vector  ETV
+attr title  "accepted confirms, vector"
+vector 38  Omrezje1.host1.wlan[0].agent  acceptConfirm:vector  ETV
+attr title  "accepted confirms, vector"
+vector 33  Omrezje1.host1.pingApp[0]  pingRxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping rx seq, vector"
+vector 29  Omrezje1.host1.pingApp[0]  rtt:vector  ETV
+attr interpolationmode  none
+attr title  "ping round-trip time, vector"
+attr unit  s
+vector 30  Omrezje1.host1.pingApp[0]  numLost:vector  ETV
+attr interpolationmode  none
+attr title  "pings lost, vector"
+0	6833 415 230 1474 0.215356852702 0.554236511294 16 34 120 1264 126896
+1	7248 894 32 1479 0.029753460526 0.554246511294 35 14 120 1724 139992
+2	8142 564 30 1476 0.029753460526 0.554236511294 22 34 120 1648 151648
+3	8706 796 230 1474 0.215356852702 0.554236511294 31 14 120 1474 129836
+4	9502 1722 0 1487 0 0.554550511294 72 0 3 177 459
+5	11224 3226 0 1487 0 0.554550511294 133 0 3 160 346
+6	14450 3408 33 1487 0.029753460526 0.554550511294 140 0 2 140 210
+7	17858 9 0 0 0 0 1 0 0 0 0
+8	17867 8112 0 1487 0 0.554550511294 336 0 3 512 1338
+17	25979 75 114 707 0.115314512467 0.517463873407 3 1 4 7 21
+18	26054 75 607 771 0.515314512467 0.519024553877 3 1 4 7 21
+20	26129 397 40 1441 0.029799800761 0.553826171059 15 34 120 1008 84336
+21	26526 428 222 1466 0.215314512467 0.554190171059 16 14 120 744 65016
+22	26954 216 220 1447 0.215314512467 0.553826171059 8 34 120 632 63448
+23	27170 1329 40 1489 0.029799800761 0.554550851529 50 14 120 2454 204812
+24	28499 836 0 1472 0 0.554236171059 34 0 3 82 212
+25	29335 3361 0 1488 0 0.554550851529 133 0 3 217 517
+26	32696 1632 223 1472 0.215314512467 0.554236171059 64 0 2 64 96
+27	34328 85 0 711 0 0.517463873407 4 0 0 0 0
+28	34413 7234 0 1489 0 0.554550851529 288 0 3 206 538
+29	41647 117 1115 1381 0.540106871543 0.550846871543 3 0.001877400968 0.002617400968 0.006652202904 1.5029801158662e-005
+30	41764 28 1115 1115 0.540106871543 0.540106871543 1 107 107 107 11449
+32	41792 2869 5 1396 0.003229470575 0.553229470575 111 0 110 6105 449735
+33	44661 84 1115 1381 0.540106871543 0.550846871543 3 107 109 324 34994
+37	44745 75 146 931 0.131276162993 0.533605603989 3 1 4 7 21
+38	44820 75 825 991 0.531276162993 0.534886324487 3 1 4 7 21
+40	44895 369 43 1377 0.029799820775 0.550846871543 14 34 120 888 69936
+41	45264 401 297 1402 0.231276162993 0.553229470575 15 14 120 730 64820
+42	45665 216 295 1400 0.231276162993 0.553229470575 8 34 120 632 63448
+43	45881 1332 43 1478 0.029799820775 0.554236871544 50 14 120 2454 204812
+44	47213 785 0 1408 0 0.553275470575 32 0 3 77 199
+45	47998 3369 0 1490 0 0.554550871543 133 0 3 220 526
+46	51367 1530 298 1408 0.231276162993 0.553275470575 60 0 2 60 90
+47	52897 85 0 935 0 0.533605603989 4 0 0 0 0
+48	52982 7214 0 1478 0 0.554236871544 286 0 3 182 498
