@@ -38,10 +38,10 @@ network Omrezje3
             @display("p=230,226");
         }
         host0: WirelessHost {
-            @display("p=128,226");
+            @display("p=130,226");
         }
         host1: WirelessHost {
-            @display("p=338,226");
+            @display("p=330,226");
         }
         visualizer: IntegratedVisualizer {
             @display("p=23,25");
@@ -56,6 +56,6 @@ network Omrezje3
             @display("p=189,25");
         }
         host2: WirelessHost {
-            @display("p=230,119");
+            @display("p=230,126");
         }
 }

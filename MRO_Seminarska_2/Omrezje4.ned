@@ -33,7 +33,7 @@ network Omrezje4
 
     submodules:
         accessPoint: AccessPoint {
-            @display("p=272,213");
+            @display("p=210,213");
         }
         host0: WirelessHost {
             @display("p=110,120");
@@ -63,27 +63,21 @@ network Omrezje4
             @display("p=510,120");
         }
         host5: WirelessHost {
-            @display("p=610,120");
-        }
-        host6: WirelessHost {
             @display("p=110,320");
         }
-        host7: WirelessHost {
+        host6: WirelessHost {
             @display("p=210,320");
         }
-        host8: WirelessHost {
+        host7: WirelessHost {
             @display("p=310,320");
         }
-        host9: WirelessHost {
+        host8: WirelessHost {
             @display("p=410,320");
         }
-        host10: WirelessHost {
+        host9: WirelessHost {
             @display("p=510,320");
         }
-        host11: WirelessHost {
-            @display("p=610,320");
-        }
         accessPoint1: AccessPoint {
-            @display("p=459,213");
+            @display("p=410,213");
         }
 }

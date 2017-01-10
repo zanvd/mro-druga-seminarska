@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for MRO_Seminarska_2
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out -L../inet/out/$$\(CONFIGNAME\)/src -lINET -KINET_PROJ=../inet
+#  opp_makemake -f --deep -O out -LC:/Programs/omnetpp-5.0/samples/inet/out/$$\(CONFIGNAME\)/src -lINET -KINET_PROJ=C:/Programs/omnetpp-5.0/samples/inet
 #
 
 # Name of target to be created (-o option)
@@ -15,14 +15,14 @@ USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(QTENV_LIBS) $(CMDENV_LI
 #USERIF_LIBS = $(QTENV_LIBS)
 
 # C++ include paths (with -I)
-INCLUDE_PATH = -I. -Iresults
+INCLUDE_PATH = -I. -Iresults -Iresults/Omrezje4
 
 # Additional object and library files to link with
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS = -L../inet/out/$(CONFIGNAME)/src  -lINET
-LIBS += -Wl,-rpath,`abspath ../inet/out/$(CONFIGNAME)/src`
+LIBS = -L$(INET_PROJ)/out/$(CONFIGNAME)/src  -lINET
+LIBS += -Wl,-rpath,`abspath $(INET_PROJ)/out/$(CONFIGNAME)/src`
 
 # Output directory
 PROJECT_OUTPUT_DIR = out
@@ -39,7 +39,7 @@ MSGFILES =
 SMFILES =
 
 # Other makefile variables (-K)
-INET_PROJ=../inet
+INET_PROJ=C:/Programs/omnetpp-5.0/samples/inet
 
 #------------------------------------------------------------------------------
 
@@ -121,13 +121,14 @@ clean:
 	$(Q)-rm -f MRO_Seminarska_2 MRO_Seminarska_2.exe libMRO_Seminarska_2.so libMRO_Seminarska_2.a libMRO_Seminarska_2.dll libMRO_Seminarska_2.dylib
 	$(Q)-rm -f ./*_m.cc ./*_m.h ./*_sm.cc ./*_sm.h
 	$(Q)-rm -f results/*_m.cc results/*_m.h results/*_sm.cc results/*_sm.h
+	$(Q)-rm -f results/Omrezje4/*_m.cc results/Omrezje4/*_m.h results/Omrezje4/*_sm.cc results/Omrezje4/*_sm.h
 
 cleanall: clean
 	$(Q)-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
 	$(qecho) Creating dependencies...
-	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES) $(SM_CC_FILES)  ./*.cc results/*.cc
+	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES) $(SM_CC_FILES)  ./*.cc results/*.cc results/Omrezje4/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 

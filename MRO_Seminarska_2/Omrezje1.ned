@@ -32,13 +32,13 @@ network Omrezje1
 
     submodules:
         accessPoint: AccessPoint {
-            @display("p=240,188");
+            @display("p=250,175");
         }
         host0: WirelessHost {
-            @display("p=138,188");
+            @display("p=0,175");
         }
         host1: WirelessHost {
-            @display("p=348,188");
+            @display("p=500,175");
         }
         visualizer: IntegratedVisualizer {
             @display("p=31,58");

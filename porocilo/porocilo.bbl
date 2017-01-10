@@ -5,4 +5,9 @@ Web source.
 \newblock Orodje omnet++.
 \newblock \url{http://www.omnetpp.org/}.
 
+\bibitem{wiki-802.11}
+Web source.
+\newblock Wikipedia - ieee 802.11.
+\newblock \url{https://en.wikipedia.org/wiki/IEEE_802.11}.
+
 \end{thebibliography}
